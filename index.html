@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naavik Master Webinar Series</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="header">
+
+        <div class="container">
+            <a href="https://www.naavik.co.in" class="logo-link">
+                <img src="https://www.naavik.co.in/images/logo.jpg" alt="Naavik Logo" class="logo">
+               
+            </a>
+            <nav class="main-nav">
+                <a href="#upcoming-webinar">Upcoming</a>
+                <a href="#register">Register</a>
+                <a href="#contact">Contact</a>
+               
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">Naavik Master Webinar Series</h1>
+                <p class="hero-tagline">Learn from India’s Leading Maritime Minds — Live, Interactive & Career-Shaping. A masterclass experience that blends real-world industry insights, career guidance, and live Q&A from the frontlines of the shipping world.</p>
+                <div id="countdown" class="countdown-timer">
+                    <div><span id="days">00</span>Days</div>
+                    <div><span id="hours">00</span>Hours</div>
+                    <div><span id="minutes">00</span>Minutes</div>
+                    <div><span id="seconds">00</span>Seconds</div>
+                </div>
+                <a href="#register" class="cta-button">Register Now</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container about-container">
+                <div class="text-content">
+                    <h2 class="section-title">About the Initiative</h2>
+                    <p>The Naavik Master Webinar Series is designed to bridge the gap between aspiring maritime professionals and the industry's top experts. Our mission is to provide clear, actionable guidance to students and young professionals, demystifying careers at sea and on shore. We connect you directly with Captains, Chief Engineers, and thought leaders to shape the next generation of the maritime workforce.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Maritime professionals discussing">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="content-section bg-light-grey">
+            <div class="container">
+                <h2 class="section-title">Key Highlights</h2>
+                <div class="card-grid-3">
+                    <div class="feature-card">
+                        <i class="fas fa-user-tie card-icon"></i>
+                        <h3>Meet Top Mariners</h3>
+                        <p>Hear from Captains, Chief Engineers, and DG Shipping advisors in exclusive live sessions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-compass card-icon"></i>
+                        <h3>Get Career Clarity</h3>
+                        <p>Understand pathways into the merchant navy, logistics, and emerging ocean tech sectors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-comments card-icon"></i>
+                        <h3>Ask Anything</h3>
+                        <p>A dedicated live Q&A to solve your doubts, myths, and confusion directly with experts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="upcoming-webinar" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Upcoming Master Webinar</h2>
+                <div class="webinar-details">
+                    <h3>Unlocking Maritime Careers: Sea, Shore & Beyond</h3>
+                    <p><strong>Date:</strong> September 25, 2025 | <strong>Time:</strong> 5:00 PM – 6:30 PM IST</p>
+                    <h4>Speakers:</h4>
+                    <ul class="speaker-list">
+                        <li>Yash Gupta (Founder, Naavik)</li>
+                        <li>Sanjeev Yadav</li>
+                        <li>Sandeep Awasthi</li>
+                        <li>Priyal Ramraje (Deck cadet Wallem shipping)</li>
+                        <li>Bong Dae Park</li>
+                    </ul>
+                </div>
+                <h3 class="subsection-title">Full Webinar Schedule</h3>
+                <div class="google-sheet-container">
+                    <iframe src="https://docs.google.com/spreadsheets/d/1vkjDTRCojjEoq83asJfbEtXM-1--xnC7zcVLJ7_rlLI/edit?gid=0#gid=0"></iframe>
+                </div>
+            </div>
+        </section>
+
+<section id="register" class="content-section bg-light-grey">
+  <div class="container">
+    <h2 class="section-title">Reserve Your Spot</h2>
+
+    <form 
+      id="registration-form" 
+      class="registration-form"
+      action="https://formspree.io/f/xldwkdde" 
+      method="POST"
+    >
+      <input type="text" name="Name" placeholder="Full Name" required>
+      <input type="email" name="Email" placeholder="Email Address" required>
+      <input type="tel" name="Phone" placeholder="Phone Number" required>
+      <input type="text" name="Organization" placeholder="School / Organization" required>
+      <input type="text" name="City" placeholder="City" required>
+      
+      <button type="submit" class="cta-button">Join Us</button>
+    </form>
+
+    <script>
+const form = document.querySelector("form");
+form.addEventListener("submit", e => {
+  setTimeout(() => {
+    alert("Thank you for registering! We’ve sent you a confirmation email.");
+  }, 100);
+});
+</script>
+
+
+  </div>
+</section>
+
+
+
+        <section id="bonus" class="content-section">
+             <div class="container">
+                <h2 class="section-title">Bonus Takeaways for All Attendees</h2>
+                <div class="card-grid-5">
+                    <div class="bonus-card"><i class="fas fa-book-open"></i><span>"Maritime Careers 360°" eBook</span></div>
+                    <div class="bonus-card"><i class="fas fa-map-signs"></i><span>Career Roadmap PDF</span></div>
+                    <div class="bonus-card"><i class="fas fa-certificate"></i><span>Digital Certificate</span></div>
+                    <div class="bonus-card"><i class="fas fa-trophy"></i><span>Free Entry to Naavik Challenge</span></div>
+                    <div class="bonus-card"><i class="fas fa-briefcase"></i><span>Priority Internship Access</span></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resources" class="content-section bg-light-grey">
+            <div class="container">
+                <h2 class="section-title">Downloads & Resources</h2>
+                <div class="card-grid-4">
+                    <a href="#" class="resource-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h4>Webinar Brochure</h4>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <i class="fas fa-image"></i>
+                        <h4>Event Posters</h4>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h4>Course Syllabus</h4>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <i class="fas fa-file-video"></i>
+                        <h4>Past Recordings</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cta" class="cta-banner">
+            <div class="container">
+                <h2>Ready to Navigate Your Future?</h2>
+                <p>Don't miss this opportunity to learn from the best in the maritime industry.</p>
+                <a href="#register" class="cta-button-accent">Register Today</a>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <img src="https://www.naavik.co.in/images/logo.jpg" alt="Naavik Logo" class="footer-logo">
+                <p>Shaping the future of maritime excellence through education and industry connection.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#upcoming-webinar">Webinars</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Naavik. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
